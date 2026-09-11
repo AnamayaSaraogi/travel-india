@@ -2,51 +2,85 @@
 <html>
 <head>
     <title>Explore India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Explore India!!</h1>
+    <a class="brand" href="#top"><span>✦</span> Explore India</a>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Places</a>
+        <a class="active" href="#top">Home</a>
+        <a href="#places">Places</a>
         <a href="gallery.html">Gallery</a>
-        <a href="#">Contact</a>
+        <a href="#footer">Contact</a>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Discover Incredible India</h2>
-    <p>Experience culture, heritage and nature.</p>
+<main id="top">
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">A journey worth taking</p>
+            <h1>Discover<br><em>Incredible</em> India</h1>
+            <p class="hero-copy">From timeless monuments to sunlit shores, find the places that make every trip unforgettable.</p>
 
-    <button onclick="showMessage()">
-        Explore More
-    </button>
-</section>
+            <button onclick="showMessage()">
+                Start exploring <span>→</span>
+            </button>
+        </div>
+        <div class="hero-note"><span>01</span><span class="line"></span><span>India in every shade</span></div>
+    </section>
 
-<section class="places">
+    <section class="places" id="places">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Choose your escape</p>
+                <h2>Places that stay with you</h2>
+            </div>
+            <p class="section-intro">Three iconic experiences.<br>One extraordinary country.</p>
+        </div>
 
-    <div class="card">
-        <h3>Taj Mahal</h3>
-        <p>Agra, Uttar Pradesh</p>
-    </div>
+        <div class="card-grid">
+            <article class="card card-taj">
+                <img src="./images/tajmahal.jpg" alt="The Taj Mahal at sunrise">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <p class="card-number">01 / HERITAGE</p>
+                    <h3>Taj Mahal</h3>
+                    <p>Agra, Uttar Pradesh</p>
+                </div>
+            </article>
 
-    <div class="card">
-        <h3>Kerala Backwaters</h3>
-        <p>God's Own Country</p>
-    </div>
+            <article class="card card-kerala">
+                <img src="./images/kerala.jpg" alt="A boat travelling through Kerala backwaters">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <p class="card-number">02 / NATURE</p>
+                    <h3>Kerala Backwaters</h3>
+                    <p>God's Own Country</p>
+                </div>
+            </article>
 
-    <div class="card">
-        <h3>Goa Beaches</h3>
-        <p>Sun, Sand and Sea</p>
-    </div>
+            <article class="card card-goa">
+                <img src="./images/goa.jpeg" alt="A peaceful beach in Goa">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <p class="card-number">03 / COAST</p>
+                    <h3>Goa Beaches</h3>
+                    <p>Sun, sand and sea</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
 
-</section>
-
-<footer>
+<footer id="footer">
     <p>© 2026 Explore India</p>
+    <p>Made for the curious traveller <span>✦</span></p>
 </footer>
 
 <script src="./scripts/script.js"></script>
